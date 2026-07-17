@@ -1,46 +1,20 @@
-<<<<<<< HEAD
 const messages = [
-"Happy Day",
-"Good Day",
-"Help Ever",
-"Serve All",
-"Be Positive",
-"Stay Strong",
-"Dream Big",
-"Never Give Up",
-"Keep Smiling",
-"Believe in Yourself"
+    "Happy Day 😊",
+    "Good Day 🌞",
+    "Help Ever 🤝",
+    "Serve All ❤️",
+    "Stay Positive 🌸",
+    "Believe in Yourself 💪",
+    "Keep Smiling 😊",
+    "Never Give Up 🚀",
+    "Be Kind to Everyone 🌍",
+    "Dream Big ⭐"
 ];
 
-function showRandomMessage(){
-
-let random = Math.floor(Math.random()*messages.length);
-
-document.getElementById("message").innerHTML = messages[random];
-
+function showRandomMessage() {
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("message").innerHTML = messages[randomIndex];
 }
 
-=======
-const messages = [
-"Happy Day",
-"Good Day",
-"Help Ever",
-"Serve All",
-"Be Positive",
-"Stay Strong",
-"Dream Big",
-"Never Give Up",
-"Keep Smiling",
-"Believe in Yourself"
-];
-
-function showRandomMessage(){
-
-let random = Math.floor(Math.random()*messages.length);
-
-document.getElementById("message").innerHTML = messages[random];
-
-}
-
->>>>>>> 3022ceb41a2d86718d68ef1c1b2447bae0ea0896
+// Display a random message whenever the page loads or refreshes
 window.onload = showRandomMessage;
